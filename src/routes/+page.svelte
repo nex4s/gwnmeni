@@ -24,10 +24,10 @@
             </li>
             <!-- Centered text -->
             <li class="flex-grow flex justify-center hover:drop-shadow-3xl ease-in duration-300">
-                <button data-target-id="contact" class="scrollButton text-[#333233] text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl">Contact Me</button>
+                <button data-target-id="contact" class="scrollButton text-[#414141] text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl">Contact Me</button>
             </li>
             <li class="flex-grow flex justify-center hover:drop-shadow-3xl ease-in duration-300">
-                <button data-target-id="gallery" class="scrollButton text-[#333233] text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl">Gallery</button>
+                <button data-target-id="gallery" class="scrollButton text-[#414141] text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl">Gallery</button>
             </li>
         </ul>
     </nav>
@@ -40,14 +40,14 @@
 </div>
 
 <div class="flex flex-col items-center justify-center h-screen p-4">
-    <h1 class="text-[#333233] xl:text-[#333233] text-[#dfdfdf] text-center font-bold text-2xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-6xl 2xl:text-9xl">
+    <h1 class="text-[#d5d5d5] xl:text-[#d5d5d5] text-[#d5d5d5] text-center font-bold text-2xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-6xl 2xl:text-9xl">
 
         Gew<span class="drop-shadow-3xl">oo</span>n 
         <span class="hover:drop-shadow-3xl ease-in duration-300" style="font-family: comfortaa">
             Meni
         </span>
     </h1>
-    <p class="mt-4 text-center font-semibold text-base sm:text-lg md:text-xl lg:text-xl xl:text-2xl 2xl:text-3xl text-[#333233] xl:text-[#333233] text-[#dfdfdf] lg:text-[#333233]">
+    <p class="mt-4 text-center font-semibold text-base sm:text-lg md:text-xl lg:text-xl xl:text-2xl 2xl:text-3xl text-[#d5d5d5] xl:text-[#d5d5d5] text-[#d5d5d5] lg:text-[#d5d5d5]">
         Hey there, I’m Meni. Online I go by Nexus. I’m a student <br>
         from <span class="flag-icon flag-icon-sr">🇸🇷</span> and always busy learning.
     </p>
@@ -56,12 +56,14 @@
 <section id="contact">
     <div style="border-top: dashed; border-color: #949494;"></div>
     <div class="flex items-center justify-center h-screen p-4 flex-col">
-        <h1 class="text-4xl font-bold sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl" style="color: #333233;">
+        <h1 class="text-4xl font-bold sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl" style="color: #d5d5d5;">
             Contact <span class="hover:drop-shadow-3xl ease-in duration-300" style="font-family: comfortaa">Me</span>
         </h1>
-        <p class="text-lg font-semibold sm:text-sm md:text-md lg:text-lg xl:text-xl 2xl:text-2xl" style="color: #333233;">
+        <p class="text-lg font-semibold sm:text-sm md:text-md lg:text-lg xl:text-xl 2xl:text-2xl" style="color: #d5d5d5;">
             I use multiple Social Media platforms on which you can contact me.<br> Here's a list of platforms on which you can click to contact me.
         </p>
+        <br>
+        <br>
         <div class="flex flex-row list-none space-x-9 object-center">
             <li class="list-none">
                 <a href="https://www.instagram.com/gwnmeni/" target="_blank">
@@ -94,8 +96,8 @@
 
 <section id="gallery" class="relative flex items-center justify-center h-screen p-4 flex-col">
     <div class="border-t border-dashed border-gray-400 mb-8"></div>
-    <h1 class="text-4xl font-bold sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl text-[#333233] mb-4">Gallery</h1>
-    <p class="text-lg font-semibold sm:text-sm md:text-md lg:text-lg xl:text-xl 2xl:text-2xl text-[#333233] mb-8">Just some pics of me</p>
+    <h1 class="text-4xl font-bold sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl text-[#d5d5d5] mb-4">Gallery</h1>
+    <p class="text-lg font-semibold sm:text-sm md:text-md lg:text-lg xl:text-xl 2xl:text-2xl text-[#d5d5d5] mb-8">Just some pics of me</p>
     <!-- Gallery Container -->
     <div class="relative w-full max-w-full sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl 2xl:max-w-7xl h-64 sm:h-72 md:h-80 lg:h-96 xl:h-[400px] 2xl:h-[500px] overflow-hidden rounded-md">
         <img id="galleryImage" src="/pics/1.jpg" alt="Gallery Image" class="w-full h-full object-contain">
@@ -106,6 +108,16 @@
 </div>
 
 <script>
+      document.querySelectorAll('.scrollButton').forEach(button => {
+        button.addEventListener('click', function() {
+            const targetId = this.getAttribute('data-target-id');
+            const targetElement = document.getElementById(targetId);
+            if (targetElement) {
+                targetElement.scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+    });
+    
     let currentImageIndex = 0;
     const images = [
         '/pics/1.jpg',
@@ -128,6 +140,8 @@
         currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
         showImage(currentImageIndex);
     }
+
+
 </script>
 
 </body>
