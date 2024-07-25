@@ -40,13 +40,14 @@
 </div>
 
 <div class="flex flex-col items-center justify-center h-screen p-4">
-    <h1 class="text-[#333233] text-center font-bold text-2xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-6xl 2xl:text-9xl">
+    <h1 class="text-[#333233] xl:text-[#333233] text-[#dfdfdf] text-center font-bold text-2xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-6xl 2xl:text-9xl">
+
         Gew<span class="drop-shadow-3xl">oo</span>n 
         <span class="hover:drop-shadow-3xl ease-in duration-300" style="font-family: comfortaa">
             Meni
         </span>
     </h1>
-    <p class="mt-4 text-center font-semibold text-base sm:text-lg md:text-xl lg:text-xl xl:text-2xl 2xl:text-3xl text-[#333233] lg:text-[#333233]">
+    <p class="mt-4 text-center font-semibold text-base sm:text-lg md:text-xl lg:text-xl xl:text-2xl 2xl:text-3xl text-[#333233] xl:text-[#333233] text-[#dfdfdf] lg:text-[#333233]">
         Hey there, I’m Meni. Online I go by Nexus. I’m a student <br>
         from <span class="flag-icon flag-icon-sr">🇸🇷</span> and always busy learning.
     </p>
