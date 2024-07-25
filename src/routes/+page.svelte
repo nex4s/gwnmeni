@@ -20,7 +20,7 @@
         <ul class="flex items-center w-full xl:space-x-6 sm:space-x-10 md:space-x-10 md:text-text-lg xl:text-xl text-sm sm:text-lg font-[Comfortaa]">
             <!-- Image on the left -->
             <li class="relative left-0 sm:left-[10px] hover:drop-shadow-3xl ease-in duration-300">
-                <img alt="..." src="/pfp.jpg" class="rounded-full h-12 ml-3 xl:h-12 2xl:h-24">
+                <img alt="..." src="/mepfp.png" class="rounded-full h-12 ml-3 xl:h-12 2xl:h-24">
             </li>
             <!-- Centered text -->
             <li class="flex-grow flex justify-center hover:drop-shadow-3xl ease-in duration-300">
