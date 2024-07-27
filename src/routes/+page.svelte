@@ -12,7 +12,7 @@
         }
     </style>
 </head>
-<body class="bg-zinc-300 bg-background bg-cover" style="height: 100%;">
+<body class=" bg-background bg-cover" style="height: 100%;">
     <div class="bg-black bg-opacity-25">
 
 <header class="bg-[#e0e0e0] text-white font-semibold shadow-md shadow-gray-700">
@@ -25,6 +25,9 @@
             <!-- Centered text -->
             <li class="flex-grow flex justify-center hover:drop-shadow-3xl ease-in duration-300">
                 <button data-target-id="contact" class="scrollButton text-[#414141] text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl">Contact Me</button>
+            </li>
+            <li class="flex-grow flex justify-center hover:drop-shadow-3xl ease-in duration-300">
+                <button data-target-id="codeIn" class="scrollButton text-[#414141] text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl">Coding Professions</button>
             </li>
             <li class="flex-grow flex justify-center hover:drop-shadow-3xl ease-in duration-300">
                 <button data-target-id="gallery" class="scrollButton text-[#414141] text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl">Gallery</button>
@@ -40,14 +43,14 @@
 </div>
 
 <div class="flex flex-col items-center justify-center h-screen p-4">
-    <h1 class="text-[#d5d5d5] xl:text-[#d5d5d5] text-[#d5d5d5] text-center font-bold text-2xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-6xl 2xl:text-9xl">
+    <h1 class="text-[##1d1d1d] xl:text-[#1d1d1d] text-[#d5d5d5] text-center font-bold text-2xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-6xl 2xl:text-9xl">
 
         Gew<span class="drop-shadow-3xl">oo</span>n 
         <span class="hover:drop-shadow-3xl ease-in duration-300" style="font-family: comfortaa">
             Meni
         </span>
     </h1>
-    <p class="mt-4 text-center font-semibold text-base sm:text-lg md:text-xl lg:text-xl xl:text-2xl 2xl:text-3xl text-[#d5d5d5] xl:text-[#d5d5d5] text-[#d5d5d5] lg:text-[#d5d5d5]">
+    <p class="mt-4 text-center font-semibold text-base sm:text-lg md:text-xl lg:text-xl xl:text-2xl 2xl:text-3xl text-[#d5d5d5] xl:text-[#1d1d1d] text-[#d5d5d5] lg:text-[#1d1d1d]">
         Hey there, I’m Meni. Online I go by Nexus. I’m a student <br>
         from <span class="flag-icon flag-icon-sr">🇸🇷</span> and always busy learning.
     </p>
@@ -56,14 +59,13 @@
 <section id="contact">
     <div style="border-top: dashed; border-color: #949494;"></div>
     <div class="flex items-center justify-center h-screen p-4 flex-col">
-        <h1 class="text-4xl font-bold sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl" style="color: #d5d5d5;">
+        <h1 class="text-4xl font-bold sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl" style="color: #1d1d1d;">
             Contact <span class="hover:drop-shadow-3xl ease-in duration-300" style="font-family: comfortaa">Me</span>
         </h1>
-        <p class="text-lg font-semibold sm:text-sm md:text-md lg:text-lg xl:text-xl 2xl:text-2xl" style="color: #d5d5d5;">
+        <p class="text-lg font-semibold sm:text-sm md:text-md lg:text-lg xl:text-xl 2xl:text-2xl" style="color: #1d1d1d;">
             I use multiple Social Media platforms on which you can contact me.<br> Here's a list of platforms on which you can click to contact me.
         </p>
-        <br>
-        <br>
+ <br>
         <div class="flex flex-row list-none space-x-9 object-center">
             <li class="list-none">
                 <a href="https://www.instagram.com/gwnmeni/" target="_blank">
@@ -96,8 +98,8 @@
 
 <section id="gallery" class="relative flex items-center justify-center h-screen p-4 flex-col">
     <div class="border-t border-dashed border-gray-400 mb-8"></div>
-    <h1 class="text-4xl font-bold sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl text-[#d5d5d5] mb-4">Gallery</h1>
-    <p class="text-lg font-semibold sm:text-sm md:text-md lg:text-lg xl:text-xl 2xl:text-2xl text-[#d5d5d5] mb-8">Just some pics of me</p>
+    <h1 class="text-4xl font-bold sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl text-[#1d1d1d] mb-4">Gallery</h1>
+    <p class="text-lg font-semibold sm:text-sm md:text-md lg:text-lg xl:text-xl 2xl:text-2xl text-[#1d1d1d] mb-8">Just some pics of me</p>
     <!-- Gallery Container -->
     <div class="relative w-full max-w-full sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl 2xl:max-w-7xl h-64 sm:h-72 md:h-80 lg:h-96 xl:h-[400px] 2xl:h-[500px] overflow-hidden rounded-md">
         <img id="galleryImage" src="/pics/1.jpg" alt="Gallery Image" class="w-full h-full object-contain">
@@ -105,6 +107,53 @@
         <button class="absolute right-2 sm:right-4 md:right-6 lg:right-8 xl:right-10 2xl:right-12 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white py-2 px-4 rounded-full hover:bg-gray-700" onclick="nextImage()">&#10095;</button>
     </div>
 </section>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<section class='codedIn' id='codeIn'>
+    <div class='flex justify-center items-center flex-col pt-10'>
+      <h1 class='font-bold text-4xl text-center text-[#1d1d1d]'>Coding Professions</h1>
+      <p class='pt-2 text-center font-semibold text-[#1d1d1d]'>Here are the libraries / Frameworks I can code in</p>
+    </div>
+    <div class='skill-section flex flex-wrap justify-center items-center gap-[3px] mt-4'>
+      <div class="skill-img group w-32 h-32 rounded-full flex items-center justify-center relative">
+        <img src="/programmingLanguages/html.png" alt="HTML" class="border border-solid border-slate-500 rounded-lg shadow-lg shadow-black w-16 h-16 p-2 bg-slate-500 transform transition-transform duration-300 hover:scale-110" />
+        <span class="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-xs bg-slate-500 text-white rounded p-1">HTML</span>
+      </div>
+      <div class="skill-img group w-32 h-32 rounded-full flex items-center justify-center relative">
+        <img src="/programmingLanguages/css.png" alt="CSS" class="border border-solid border-slate-500 rounded-lg shadow-lg shadow-black w-16 h-16 p-2 bg-slate-500 transform transition-transform duration-300 hover:scale-110" />
+        <span class="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-xs bg-slate-500 text-white rounded p-1">CSS</span>
+      </div>
+      <div class="skill-img group w-32 h-32 rounded-full flex items-center justify-center relative">
+        <img src="/programmingLanguages/svelte.png" alt="Svelte" class="border border-solid border-slate-500 rounded-lg shadow-lg shadow-black w-16 h-16 p-2 bg-slate-500 transform transition-transform duration-300 hover:scale-110" />
+        <span class="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-xs bg-slate-500 text-white rounded p-1">Svelte</span>
+      </div>
+      <div class="skill-img group w-32 h-32 rounded-full flex items-center justify-center relative">
+        <img src="/programmingLanguages/discordjs.png" alt="Discord.js" class="border border-solid border-slate-500 rounded-lg shadow-lg shadow-black w-16 h-16 p-2 bg-slate-500 transform transition-transform duration-300 hover:scale-110" />
+        <span class="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-xs bg-slate-500 text-white rounded p-1">Discord.js</span>
+      </div>
+      <div class="skill-img group w-32 h-32 rounded-full flex items-center justify-center relative">
+        <img src="/programmingLanguages/tailwindcss.png" alt="Tailwind CSS" class="border border-solid border-slate-500 rounded-lg shadow-lg shadow-black w-16 h-16 p-2 bg-slate-500 transform transition-transform duration-300 hover:scale-110" />
+        <span class="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-xs bg-slate-500 text-white rounded p-1">Tailwind CSS</span>
+      </div>
+      <div class="skill-img group w-32 h-32 rounded-full flex items-center justify-center relative">
+        <img src="/programmingLanguages/javascript.png" alt="JavaScript" class="border border-solid border-slate-500 rounded-lg shadow-lg shadow-black w-16 h-16 p-2 bg-slate-500 transform transition-transform duration-300 hover:scale-110" />
+        <span class="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-xs bg-slate-500 text-white rounded p-1">JavaScript</span>
+      </div>
+      <div class="skill-img group w-32 h-32 rounded-full flex items-center justify-center relative">
+        <img src="/programmingLanguages/reactjs.png" alt="React" class="border border-solid border-slate-500 rounded-lg shadow-lg shadow-black w-16 h-16 p-2 bg-slate-500 transform transition-transform duration-300 hover:scale-110" />
+        <span class="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-xs bg-slate-500 text-white rounded p-1">React</span>
+      </div>
+    </div>
+  </section>
+  
+<br><br>
+<br><br>
+<br><br>
 </div>
 
 <script>
